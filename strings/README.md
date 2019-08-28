@@ -2,13 +2,17 @@
 
 ## How to run this part:
 
-Go to this directory `desafios\strings`, type the following command:
+Go to this directory `desafios\strings\` and type the following command:
 
-`python formatter.py `
+```python
+python formatter.py [your-test-archive-name] [line limit] [justify]
+```
+Example:
+```python
+python formatter.py files/test-input.txt 40 True
+```
 
-### Dicas
-- Existe um template para projetos em Java ;)
+## Guideline
 
-### Extras
-
-- Parametrização da quantidade de caracteres por linha.
+1. Put the input archives in the folder `files`
+2. The input must be a `.txt` file
