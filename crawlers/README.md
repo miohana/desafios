@@ -13,7 +13,7 @@ python bot.py 'cats;dogs'
 ```
 ### How to run the chatbot:
 
-First of all, you need to get a new token through [BotFather](https://telegram.me/botfather),.
+First of all, you need to get a new token through [BotFather](https://telegram.me/botfather).<br />
 With your code ready, past it in the command below:
 
 ```python
@@ -27,4 +27,4 @@ Remember that you need to maintain the command running while you are talking to 
 
 ## Guideline
 
-1. Divide the subreddits with a semicolon, inside a single quotation mark
+Divide the subreddits with a semicolon, inside a single quotation mark
