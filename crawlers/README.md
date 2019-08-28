@@ -23,8 +23,7 @@ Example (the token below is not a real token):
 ```python
 python bot.py '821001893:AJ2HD3K2OWAC-C3HL3DsHNEhJMlkaC3tFbWI'
 ```
-Remember that you need to maintain the command running while you are talking to the bot.
-
 ## Guideline
 
-Divide the subreddits with a semicolon, inside a single quotation mark
+1. Divide the subreddits with a semicolon, inside a single quotation mark
+2. You need to maintain the command running while you are talking to the bot
