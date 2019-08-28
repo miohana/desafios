@@ -1,33 +1,30 @@
-# 1: Reddit crawler
+# 1: Reddit crawler and Telegram bot
 
-Parte do trabalho na IDwall inclui desenvolver *crawlers/scrapers* para coletar dados de websites.
-Como nós nos divertimos trabalhando, às vezes trabalhamos para nos divertir!
+## How to run this part:
 
-O Reddit é quase como um fórum com milhares de categorias diferentes. Com a sua conta, você pode navegar por assuntos técnicos, ver fotos de gatinhos, discutir questões de filosofia, aprender alguns life hacks e ficar por dentro das notícias do mundo todo!
+Go to this directory `desafios\crawlers\` and type the following command:
 
-Subreddits são como fóruns dentro do Reddit e as postagens são chamadas *threads*.
+```python
+python crawler.py 'subreddit1;subreddit2'
+```
+Example:
+```python
+python bot.py 'cats;dogs'
+```
+### How to run the chatbot:
 
-Para quem gosta de gatos, há o subreddit ["/r/cats"](https://www.reddit.com/r/cats) com threads contendo fotos de gatos fofinhos.
-Para *threads* sobre o Brasil, vale a pena visitar ["/r/brazil"](https://www.reddit.com/r/brazil) ou ainda ["/r/worldnews"](https://www.reddit.com/r/worldnews/).
-Um dos maiores subreddits é o "/r/AskReddit".
+First of all, you need to get a new token through [BotFather](https://telegram.me/botfather),.
+With your code ready, past it in the command below:
 
-Cada *thread* possui uma pontuação que, simplificando, aumenta com "up votes" (tipo um like) e é reduzida com "down votes".
+```python
+python bot.py 'token'
+```
+Example (the token below is not a real token):
+```python
+python bot.py '821001893:AJ2HD3K2OWAC-C3HL3DsHNEhJMlkaC3tFbWI'
+```
+Remember that you need to maintain the command running while you are talking to the bot.
 
-Sua missão é encontrar e listar as *threads* que estão bombando no Reddit naquele momento!
-Consideramos como bombando *threads* com 5000 pontos ou mais.
+## Guideline
 
-## Entrada
-- Lista com nomes de subreddits separados por ponto-e-vírgula (`;`). Ex: "askreddit;worldnews;cats"
-
-### Parte 1
-Gerar e imprimir uma lista contendo a pontuação, subreddit, título da thread, link para os comentários da thread e link da thread.
-Essa parte pode ser um CLI simples, desde que a formatação da impressão fique legível.
-
-### Parte 2
-Construir um robô que nos envie essa lista via Telegram sempre que receber o comando `/NadaPraFazer [+ Lista de subrredits]` (ex.: `/NadaPraFazer programming;dogs;brazil`)
-
-### Dicas
- - Use https://old.reddit.com/
- - Qualquer método para coletar os dados é válido. Caso não saiba por onde começar, procure por JSoup (Java), SeleniumHQ (Java), PhantomJS (Javascript) e Beautiful Soup (Python).
-
-O input deve ser enviado entre aspas simples.
+1. Divide the subreddits with a semicolon, inside a single quotation mark
